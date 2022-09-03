@@ -6,4 +6,13 @@ function fillStartWord(startWord, word) {
 module.exports = fillStartWord
 
 function fillStartWord(startWord,word){
-}
+    if(word === null || word === undefined){
+        return undefined
+    }
+    else if(word.includes(startWord) == true){
+        return word
+    }
+    else{
+        return startWord+word
+    }
+  }
